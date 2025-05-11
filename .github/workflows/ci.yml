@@ -19,8 +19,7 @@ jobs:
           pip install black ruff mypy pytest
       - name: Lint & test
         run: |
-            black --check .
-            -   ruff .
-            +   ruff check .
-            mypy .
-            pytest
+          black --check .
+          ruff check .
+          mypy .
+          pytest
