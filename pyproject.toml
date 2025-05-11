@@ -1,0 +1,17 @@
+[project]
+name = "intelliroute"
+version = "0.1.0"
+description = "Smart trip & task planner"
+authors = [{name = "Dan Russuleac", email = "drussuleac@gmail.com"}]
+readme = "README.md"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
